@@ -2,10 +2,15 @@
 
 pub mod robot_ops;
 pub mod hello;
+mod order;
 
 pub fn test_hello_world() {
     hello::world();
     robot_ops::speak(&String::from("heheh, hello!!!"));
+}
+
+pub fn test_create_order {
+    order::
 }
 
 pub mod calculator {
