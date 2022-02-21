@@ -29,4 +29,6 @@ fn main() {
     println!("{}", res);
 
     println!("{}", ext_hello::hello());
+
+    f::test_create_order();
 }

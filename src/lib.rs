@@ -9,8 +9,8 @@ pub fn test_hello_world() {
     robot_ops::speak(&String::from("heheh, hello!!!"));
 }
 
-pub fn test_create_order {
-    order::
+pub fn test_create_order() {
+    let order = order::place_new_order("Test", 10);
 }
 
 pub mod calculator {
