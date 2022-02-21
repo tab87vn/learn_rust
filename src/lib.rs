@@ -4,6 +4,9 @@ pub mod robot_ops;
 pub mod hello;
 mod order;
 
+pub mod collections;
+pub mod boxes;
+
 pub fn test_hello_world() {
     hello::world();
     robot_ops::speak(&String::from("heheh, hello!!!"));
