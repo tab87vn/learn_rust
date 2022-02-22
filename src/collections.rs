@@ -36,11 +36,11 @@ pub fn test_list_two() {
     
     println!("Throw away {}", discard);
 
-    for i in v {
+    for i in &v {
         println!("Take ownership of the vector and its element {}", i);
     }
 
-    // for i in v {
-    //     println!("Take ownership of the vector and its element {}", i);
-    // }
+    for i in v {
+        println!("Take ownership of the vector and its element {}", i);
+    }
 }

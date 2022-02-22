@@ -36,6 +36,6 @@ fn main() {
 
     f::test_create_order();
 
-    f::collections::test_list_two();
-    f::boxes::test_boxes();
+    // f::collections::test_list_two();
+    // f::boxes::test_boxes();
 }

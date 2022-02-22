@@ -13,7 +13,9 @@ pub fn place_new_order(name: &str, qty: i32) -> OrderRecord {
     };
 
     println!("A new order has been placed!");
-    order.get_details();
+    
+    let res = order.get_details();
+    println!("{}", res);
 
     return order;
 }
@@ -28,12 +30,18 @@ pub struct OrderRecord {
 impl OrderRecord {
     // pub fn new(name: &str, qty: i32, id: u64) -> Self { Self { name, qty, id } }
 
-    pub fn get_details(&self)  {
-        
-        // let str = concat!("Name: ", self.name, "; Quantity: ", self.qty);
-        // String::from(str)
-
+    pub fn print_details(&self)  {
         println!("{:?}", &self);
+    }
+    
+    pub fn get_details(&self) -> String {
+        
+        let mut res = String::from("Name: ");
+        res.push_str(&self.name);
+        res.push_str("; Quantity: ");
+        res.push_str(&self.qty.to_string());
+
+        res
     }
 
     // pub fn update_quality(&self, new_qty: i32) {
