@@ -6,7 +6,8 @@
 // use foo::test_hello_world;
 
 use foo::calculator::*;
-use foo::order::domains::*;
+// use foo::order::domains::OrderRecord; // make domains public to use this
+use foo::order::*;
 
 extern crate test_crate_hello_world as ext_hello;
 extern crate foo as f;
