@@ -2,8 +2,7 @@
 
 pub mod robot_ops;
 pub mod hello;
-mod order;
-
+pub mod order;
 pub mod collections;
 pub mod boxes;
 

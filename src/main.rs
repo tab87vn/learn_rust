@@ -6,6 +6,7 @@
 // use foo::test_hello_world;
 
 use foo::calculator::*;
+use foo::order::domains::*;
 
 extern crate test_crate_hello_world as ext_hello;
 extern crate foo as f;
@@ -38,4 +39,8 @@ fn main() {
 
     // f::collections::test_list_two();
     // f::boxes::test_boxes();
+
+    let order = OrderRecord::new("Hello".to_string(), 12, 212212);
+    println!("{:?}", order);
+
 }

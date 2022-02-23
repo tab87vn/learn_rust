@@ -6,7 +6,7 @@ pub struct OrderRecord {
 }
 
 impl OrderRecord {
-    // pub fn new(name: &str, qty: i32, id: u64) -> Self { Self { name, qty, id } }
+    pub fn new(name: String, qty: i32, id: u64) -> Self { Self { name, qty, id } }
 
     pub fn print_details(&self)  {
         println!("{:?}", &self);

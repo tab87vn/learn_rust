@@ -1,7 +1,7 @@
-mod domains;
+pub mod domains;
 
 use rand::Rng; 
-use domains::OrderRecord;
+pub use domains::OrderRecord;
 
 pub fn place_new_order(name: &str, qty: i32) -> OrderRecord {
     let mut rng = rand::thread_rng();
