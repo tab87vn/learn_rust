@@ -44,4 +44,11 @@ fn main() {
     let order = OrderRecord::new("Hello".to_string(), 12, 212212);
     println!("{:?}", order);
 
+    let order = OrderRecord::new("World".to_string(), 1, 5555);
+    println!("{:?}", order);
+
+    let _f = foo::file::open_file("hello.txt".to_string());
+    
+ 
+
 }
