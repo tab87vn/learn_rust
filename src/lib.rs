@@ -6,6 +6,7 @@ pub mod order;
 pub mod collections;
 pub mod boxes;
 pub mod concurrency;
+pub mod file;
 
 pub fn test_hello_world() {
     hello::world();
