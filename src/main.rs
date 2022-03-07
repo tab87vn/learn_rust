@@ -44,4 +44,6 @@ fn main() {
     let order = OrderRecord::new("Hello".to_string(), 12, 212212);
     println!("{:?}", order);
 
+    f::concurrency::test_spawned_thread();
+
 }
