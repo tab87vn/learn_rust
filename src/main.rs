@@ -51,5 +51,5 @@ fn main() {
     println!("{:?}", order);
 
     let _f = foo::file::open_file("hello.txt".to_string());
-    let _f2 = foo::file::open_file_two("hello.txt".to_string());
+    // let _f2 = foo::file::open_file_two("hello.txt".to_string());
 }

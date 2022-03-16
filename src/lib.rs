@@ -7,6 +7,7 @@ pub mod collections;
 pub mod boxes;
 pub mod concurrency;
 pub mod file;
+mod traits;
 
 pub fn test_hello_world() {
     hello::world();
